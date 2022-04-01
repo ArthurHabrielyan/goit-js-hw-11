@@ -1,6 +1,6 @@
 const axios = require('axios');
 const BASE_URL = 'https://pixabay.com/api/';
-const KEY = '25737167-0db4b813879a604136ea7d639';
+const KEY = '26347249-7bd0a4c88189af5f7d992fd4e';
 
 export default class ImageApiService {
   constructor() {
@@ -11,20 +11,20 @@ export default class ImageApiService {
   async fetchImageFromDb() {
     console.log(this);
     const url = `${BASE_URL}?key=${KEY}&q=${this.inputValue}&lang=en&per_page=40&page=${this.page}&
-    image_type="photo&orientation=horizontal&safesearch=true"`;
-    
+    image_type=photo&orientation=horizontal&safesearch=true`;
+
     try {
       const response = await axios.get(url);
       const data = await response.data;
 
       return data;
-    }catch (error) {
+    } catch (error) {
       console.log(error);
-    }     
+    }
   }
 
   decrementPage() {
-    this.page +=1;
+    this.page += 1;
   }
 
   resetPage() {
@@ -39,4 +39,3 @@ export default class ImageApiService {
     this.inputValue = newInput;
   }
 }
-
