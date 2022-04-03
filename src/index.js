@@ -8,7 +8,7 @@ import getRefs from './js/get-refs';
 const imageApiService = new ImageApiSrvice();
 const loadMoreBtn = new LoadMoreBtn({
   selector: '.load-more',
-  hiddden: true,
+  hidden: true,
 });
 
 const refs = getRefs();
