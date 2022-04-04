@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://arthurhabrielyan.github.io/goit-js-hw-11/",
+  "homepage": "https://arthurhabrielyan.github.io/-goit-js-hw-11/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11//",
+    "build": "parcel build src/*.html --public-url /-goit-js-hw-11//",
     "server": "json-server --watch db.json"
   },
   "repository": {
